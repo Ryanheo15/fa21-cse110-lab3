@@ -10,14 +10,20 @@
   <meta name="author" content="Ryan Heo">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
   <link rel="shortcut icon" href="public/favicon.ico">
+
+  <link rel = "stylesheet" href = "style.css">
 
 </head>
 
 <body>
   <header>
     <nav>
-      <ul>
+      <ul class = "nav">
         <li><a href="#introduction">Introductions</a></li>
         <li><a href="#goals">Goals</a></li>
         <li><a href="#fun">Fun</a></li>
@@ -28,6 +34,7 @@
 
   <main>
     <h1>Team 1 meeting notes</h1>
+    <h1 class = "hidden">Hidden text</h1>
 
     <hr>
 
@@ -44,14 +51,15 @@
           <li>Don Doe</li>
         </ul>
 
-        <img alt = "team"
+        <img class = "teamImg" alt = "team"
           src="https://thumbs.dreamstime.com/b/close-up-business-people-joining-hands-team-building-exercise-54964050.jpg" />
-        <p>Here is an image of our <i>team</i></p>
+        <p id = "imgCaption">Here is an image of our <i>team</i></p>
       </div>
 
     </section>
     <section id="goals">
-      <h2>Goals</h2>
+      <h2 class = "subTitle">Goals</h2>
+      <span>Really looking forward to this!</span>
       <h3>Covering the goals and objectives for this meeting</h3>
 
       <div>
@@ -94,11 +102,25 @@
         A keyboard.
       </details>
 
+      <div class = "randomDogs">
+        <img class = "dog" src = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*" />
+
+        <img class = "dog" src = "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/golden-retriever-royalty-free-image-506756303-1560962726.jpg?crop=0.672xw:1.00xh;0.166xw,0&resize=640:*" />
+
+        <img class = "dog" src = "https://ggsc.s3.amazonaws.com/images/uploads/The_Science-Backed_Benefits_of_Being_a_Dog_Owner.jpg" />
+      </div>
+
+      <div class = "randomCats">
+        <img class = "cat" src = "https://i.redd.it/8c6p67ikaoe71.jpg" /> 
+        <img class = "cat" src = "https://www.thesprucepets.com/thmb/RvDNaSgFcUqQpU4RmiCPd8QaItA=/1500x844/smart/filters:no_upscale()/GettyImages-1067347086-b5b784cc95e040e39507bf7114e58b15.jpg" /> 
+        <img class = "cat" src = "https://images.theconversation.com/files/350865/original/file-20200803-24-50u91u.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop" /> 
+      </div>
+
     </section>
     <section id="conclusion">
-      <h1>Conclusion</h1>
+      <h2>Conclusion</h2>
 
-      <h2>Meeting summary:</h2>
+      <h3>Meeting summary:</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quod tenetur harum provident at asperiores
         sint est quis consequatur, obcaecati <br> expedita repellendus quidem rerum earum! Nulla officiis ducimus
         inventore ipsum
@@ -156,7 +178,7 @@
       </fieldset>
 
       <br>
-      <button type = "button">Submit</button>
+      <button type = "button" class = "submitButton">Submit</button>
       </form>
     </section>
   </main>
