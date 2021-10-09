@@ -1,0 +1,136 @@
+/* General root styles */
+* {
+  margin:0;
+  box-sizing:border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  padding-left:20px;
+  padding-top:20px; 
+  padding-right:5px; 
+  padding-bottom:5px;
+  background-color:#36D7D7; 
+}
+
+/* Header */ 
+
+nav {
+  position:sticky;
+}
+
+ul {
+  list-style-type:none;
+}
+
+nav ul li {
+ display:inline; 
+}
+
+a[href*="#"]{
+  color:blueviolet;
+}
+
+
+/* headings */
+h1 {
+  position:relative;
+  font-size:3rem;
+  color:blue;
+  text-align:center; 
+  text-decoration:underline;
+  padding-bottom:20px;
+}
+
+h2.subTitle {
+  font-size:2em;
+  color: rgb(70,130,180);
+}
+
+h3 {
+  color: hsl(202, 100%, 50%);
+}
+
+/* text */
+img + p {
+  margin:5px 5% 20px 50%; 
+}
+
+span ~ h3{
+  color: red;
+}
+
+.hidden{
+  display:none;
+}
+
+/* assets */ 
+.teamImg {
+  height:500px; 
+  width:500px;
+  margin-left:50%; 
+  margin-right:5%;
+  margin-top:10px;
+  margin-bottom:20px;
+  border-style: dotted;
+  border-color:black;
+  border-width:2pc;
+  border-radius:250pt;
+  padding:10px 10px 10px 10px;
+}
+
+iframe {
+  margin:auto;
+  max-height:40vh; 
+  max-width:45vw;
+}
+
+audio {
+  min-width:500px;
+}
+
+/* Buttons */ 
+.submitButton:hover {
+  background-color:orange; 
+}
+
+.submitButton:active {
+  background-color:red; 
+}
+
+
+/* Flex row */ 
+.randomDogs {
+  margin-top:50px;
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.dog, .cat {
+  height:300px; 
+  width:300px;
+}
+
+/* Grid row */ 
+.randomCats {
+  margin-top:50px;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+/* Responsiveness */ 
+@media (min-width: 30em) and (max-width: 50em) {
+  h1 {
+    color:red;
+  }
+}
+
+/* Sections */ 
+section div {
+  background-color:white;
+}
